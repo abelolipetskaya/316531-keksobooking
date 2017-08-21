@@ -1,7 +1,7 @@
 # Личный проект «Кексобукинг» [![Build status][travis-image]][travis-url]
 
 * Студент: [Александра Белолипецкая](https://up.htmlacademy.ru/javascript/10/user/316531).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Чудновский](https://htmlacademy.ru/profile/id29109).
 
 ---
 
