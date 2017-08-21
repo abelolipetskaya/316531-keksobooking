@@ -54,3 +54,28 @@ var featuresOffer = {
         'y': Math.floor(getRandomNumber(100, 500)),
     }
 };
+
+
+var generatePin = function() {
+  var nameClassDiv = 'pin';
+  var nameClassImg = 'rounded';
+  var imgWidth = 40;
+  var imgHeight = 40;
+
+  var pinDiv = document.createElement('div');
+  var pinImg = document.createElement('img');
+
+  pinDiv.className = nameClassDiv;
+  pinDiv.style.left = featuresOffer.location.x - pinDiv.offsetWidth + 'px';
+  pinDiv.style.top = featuresOffer.location.y - pinDiv.offsetHeight + 'px';
+
+  pinImg.className = nameClassImg;
+  pinImg.src = featuresOffer.author.avatar;
+  pinImg.width = imgWidth;
+  pinImg.height = imgHeight;
+
+  pinDiv.appendChild(pinImg);
+
+  return pinDiv;
+
+};
