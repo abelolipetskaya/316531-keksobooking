@@ -1,6 +1,6 @@
 'use strict'
 
-// взяла эту функцию в интернете, как я понимаю, "+min" значит - включать и max, и min значения, но до конца не уверена 
+// взяла эту функцию в интернете, как я понимаю, "+min" значит - включать и max, и min значения, но до конца не уверена
 
 var getRandomInt = function(min, max) {
     return Math.random() * max + min;
@@ -51,6 +51,6 @@ var featuresOffer = {
     },
     'location': {
         'x': Math.floor(getRandomNumber(300, 900)),
-        'y': Math.floor(getRandomNumber(100, 500))
+        'y': Math.floor(getRandomNumber(100, 500)),
     }
 };
