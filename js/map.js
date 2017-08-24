@@ -11,6 +11,7 @@ var getRandomItem = function (item) {
 };
 
 var numberOfNeighbors = 8;
+numberOfNeighbors();
 
 var titles = [
   'Большая уютная квартира',
@@ -78,13 +79,14 @@ var createNotice = function () {
 };
 
 // создание произвольного объявления
-var createNotice = function (count) {
+var createNoticeCh = function (count) {
   var notice = [];
   for (var i = 0; i < count; i++) {
     notice.push(createNotice());
   }
   return notice;
 };
+createNoticeCh();
 
 // создание пина
 var createPin = function (item) {
@@ -112,7 +114,7 @@ var renderPins = function (pin) {
   }
   pinMap.appendChild(fragment);
 };
-
+renderPins();
 
 // добавление данных в DOM
 var createDialog = function (notice) {
@@ -145,7 +147,4 @@ var createDialog = function (notice) {
 
   dialog.replaceChild(lodgeItem, dialogPanel);
 };
-
-
-
-
+createDialog();
